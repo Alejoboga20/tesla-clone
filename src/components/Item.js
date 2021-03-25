@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const Item = ({
   title,
@@ -14,7 +15,12 @@ const Item = ({
   first,
 }) => {
   return (
-    <div className='item' style={{}}>
+    <div
+      className='item'
+      style={{
+        backgroundImage: `url(${backgroundImg})`,
+      }}
+    >
       <div className='item__container'>
         <div className='item__text'>
           <p>{title}</p>
@@ -29,6 +35,11 @@ const Item = ({
               <Button imp='secondary' link={rightBtnLink} text={rightBtnTxt} />
             )}
           </div>
+          {first && (
+            <div className='item__expand'>
+              <ExpandMoreIcon />
+            </div>
+          )}
         </div>
       </div>
     </div>
