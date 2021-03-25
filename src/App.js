@@ -6,8 +6,8 @@ import ModelS from './assets/Desktop-ModelS.jpeg';
 import Model3 from './assets/Desktop-Model3.jpeg';
 import ModelX from './assets/Desktop-ModelX.jpeg';
 import SolarRoof from './assets/Desktop-SolarRoof.jpeg';
-import './App.css';
 import Item from './components/Item';
+import './App.css';
 
 function App() {
   return (
@@ -75,9 +75,9 @@ function App() {
           desc='Solar Roof Costs Less Than a New Roof Plus Solar Panels'
           descLink=''
           backgroundImg={SolarRoof}
-          leftBtnTxt=''
+          leftBtnTxt='CUSTOM ORDER'
           leftBtnLink=''
-          rightBtnTxt=''
+          rightBtnTxt='LEARN MORE'
           rightBtnLink=''
           twoButtons='true'
         />
@@ -86,7 +86,7 @@ function App() {
           desc=''
           descLink=''
           backgroundImg={Accessories}
-          leftBtnTxt=''
+          leftBtnTxt='SHOP NOW'
           leftBtnLink=''
           rightBtnTxt=''
           rightBtnLink=''
